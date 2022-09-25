@@ -1,0 +1,241 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url('https://stockfont.org/?ce2e9ac4b29247ba5052b77b46d29fc9ebea3bc0c7da76c24d106c3c8ff42721');
+
+html {
+    font-family: 'Oxygen-Regular', times, verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4e5765;
+    --success: #4ea95f;
+    --info: #007BFF;
+    --error: #C82333;
+
+}
+
+.admin_container {
+    display: flex;
+}
+
+.main_admin_area {
+    width: 100%;
+    padding: 10px;
+}
+
+.fa-icon {
+    font-size: 2em;
+}
+
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+
+.side_nav nav.side_nav.expanded {
+    width: 250px;
+    overflow: visible;
+}
+
+.side_nav {
+    background: var(--primary);
+    height: 100vh;
+}
+
+.side_nav>ul {
+    margin: 7px 0;
+}
+
+.side_nav li {
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.side_nav li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #fff;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+
+}
+
+.side_nav .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.side_nav .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+}
+
+.side_nav>ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.no-touch .scrollable.hover {
+    overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y: auto;
+    overflow: visible;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav ul, nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.side_nav li:hover>a, nav.side_nav li.active>a, .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .no-touch .dashboard-page nav.dashboard-menu ul li:hover a, .dashboard-page nav.dashboard-menu ul li.active a {
+    color: #fff;
+    background-color: #222;
+}
+
+.side_nav .active_nav {
+    background-color: var(--success);
+}
+
+.area {
+    float: right;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:nth-child(odd):hover {
+    background-color: #ddd;
+}
+
+
+th, td {
+    text-align: left;
+    font-size: 12px;
+    padding: 10px;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+}
+
+form {
+    margin: 10px 0 0 0;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+input, .submit_btn, select, textarea {
+    width: 300px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+
+}
+
+.submit_btn {
+    width: 300px;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+    padding: 15px 10px;
+    background-color: var(--success);
+    color: #fff;
+}
+
+.action_btn {
+    width: 70%;
+    padding: 15px 10px;
+    border-radius: 6px;
+    margin: 0 0 10px 0;
+    border: 0;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.add_admin_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add_btn {
+    width: 200px;
+    background-color: var(--success);
+}
+
+.edit_btn {
+    background-color: var(--primary);
+}
+
+.delete_btn {
+    background-color: var(--error);
+}
+
+.td_content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
